@@ -64,7 +64,8 @@ class ExecutePostCalls(
 
     override fun onPostExecute(result: String) {
         Log.i("DBCall Result: ", result)
-        onCompletion.accept(result)
+        if(onCompletion!=null)
+            onCompletion.accept(result)
     }
 
     @Throws(Exception::class)
