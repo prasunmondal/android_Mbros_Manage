@@ -1,4 +1,4 @@
-package com.prasunmondal.mbros_manage
+package com.prasunmondal.mbros_manage.Activities
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -6,11 +6,9 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.TextView
+import com.prasunmondal.mbros_manage.R
 
 import kotlinx.android.synthetic.main.activity_main.*
 
