@@ -7,11 +7,17 @@ import android.widget.EditText
 import com.prasunmondal.mbros_manage.DatabaseCalls.AddNewOrder
 import com.prasunmondal.mbros_manage.models.Order
 import com.prasunmondal.mbros_manage.R
+import com.prasunmondal.mbros_manage.date.DateUtls
+import java.util.*
 
 class AddOrder : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_order)
+    }
+
+    private fun getOrderId(): String {
+        return DateUtls.getDate() + "_" + getCustomerId()
     }
 
     private fun getCustomerId(): String {
@@ -39,7 +45,7 @@ class AddOrder : AppCompatActivity() {
     }
 
     fun onClickPlaceOrderButton(view: View) {
-        var order = Order(getCustomerId(), getCustomerName(), getPcs(), getKilos(), getPricePerKilo(), getPreviousDue());
+        var order = Order(getOrderId(), getCustomerId(), getCustomerName(), getPcs(), getKilos(), getPricePerKilo(), getPreviousDue());
         AddNewOrder().execute(order, {})
     }
 }

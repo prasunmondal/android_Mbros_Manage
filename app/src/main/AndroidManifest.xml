@@ -18,15 +18,15 @@
 
         </activity>
         <activity android:name=".activities.AddOrder">
-        </activity>
-        <activity android:name=".activities.ViewCustomers">
-        </activity>
-        <activity android:name=".activities.RegisterCustomer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activities.ViewCustomers">
+        </activity>
+        <activity android:name=".activities.RegisterCustomer">
         </activity>
         <activity
             android:name=".activities.MainActivity"

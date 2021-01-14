@@ -20,7 +20,8 @@ public class AddNewOrder
     }
 
     private static String getStringToSave(Order order) {
-        return order.customerId + StringConstants.SEPARATOR_DB
+        return order.orderId + StringConstants.SEPARATOR_DB
+                + order.customerId + StringConstants.SEPARATOR_DB
                 + order.customerName + StringConstants.SEPARATOR_DB
                 + order.pcs + StringConstants.SEPARATOR_DB
                 + order.kilos + StringConstants.SEPARATOR_DB
