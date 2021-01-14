@@ -1,7 +1,7 @@
 package com.prasunmondal.mbros_manage.DatabaseCalls;
 
 import com.prasunmondal.mbros_manage.DatabaseUtils.InsertUniqueDataToDB;
-import com.prasunmondal.mbros_manage.Models.Customer;
+import com.prasunmondal.mbros_manage.models.Customer;
 import com.prasunmondal.mbros_manage.Utils.StringConstants;
 
 import java.util.function.Consumer;
@@ -24,8 +24,8 @@ public class RegisterNewCustomer
     }
 
     private static String getStringToSave(Customer customer) {
-        return customer.id + StringConstants.SEPARATOR_DB
-                + customer.name + StringConstants.SEPARATOR_DB
-                + customer.phoneNumber1;
+        return customer.getId() + StringConstants.SEPARATOR_DB
+                + customer.getName() + StringConstants.SEPARATOR_DB
+                + customer.getPhoneNumber1();
     }
 }

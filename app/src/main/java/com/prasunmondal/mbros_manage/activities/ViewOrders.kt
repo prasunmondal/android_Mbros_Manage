@@ -1,11 +1,11 @@
-package com.prasunmondal.mbros_manage.Activities
+package com.prasunmondal.mbros_manage.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import com.prasunmondal.mbros_manage.DatabaseCalls.FetchAllOrders
-import com.prasunmondal.mbros_manage.Models.Order
+import com.prasunmondal.mbros_manage.models.Order
 import com.prasunmondal.mbros_manage.R
 import java.util.ArrayList
 

@@ -1,9 +1,7 @@
 package com.prasunmondal.mbros_manage.DatabaseCalls;
 
-import com.prasunmondal.mbros_manage.DatabaseUtils.InsertUniqueDataToDB;
 import com.prasunmondal.mbros_manage.DatabaseUtils.UpdateDataInDB;
-import com.prasunmondal.mbros_manage.Models.Customer;
-import com.prasunmondal.mbros_manage.Models.Order;
+import com.prasunmondal.mbros_manage.models.Order;
 import com.prasunmondal.mbros_manage.Utils.StringConstants;
 
 import java.util.function.Consumer;

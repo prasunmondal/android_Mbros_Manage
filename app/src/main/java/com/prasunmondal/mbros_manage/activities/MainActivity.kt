@@ -1,4 +1,4 @@
-package com.prasunmondal.mbros_manage.Activities
+package com.prasunmondal.mbros_manage.activities
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable

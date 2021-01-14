@@ -1,4 +1,4 @@
-package com.prasunmondal.mbros_manage.Models
+package com.prasunmondal.mbros_manage.models
 
 import com.google.gson.reflect.TypeToken
 import com.prasunmondal.mbros_manage.Utils.DataParser

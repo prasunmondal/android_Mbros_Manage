@@ -1,11 +1,10 @@
-package com.prasunmondal.mbros_manage.Activities
+package com.prasunmondal.mbros_manage.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
 import android.widget.TextView
-import com.prasunmondal.mbros_manage.Models.Customer
+import com.prasunmondal.mbros_manage.models.Customer
 import com.prasunmondal.mbros_manage.R
 
 class RegisterCustomer : AppCompatActivity() {
@@ -28,10 +27,7 @@ class RegisterCustomer : AppCompatActivity() {
     }
 
     fun onClickSaveButton(view: View) {
-        var customer = Customer()
-        customer.id = getUserId()
-        customer.name = getName()
-        customer.phoneNumber1 = getPhoneNumber1()
-        customer.registerCustomer(customer)
+        var customer = Customer(getUserId(), getName(), getPhoneNumber1(), "", "")
+        customer.addToDB()
     }
 }

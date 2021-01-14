@@ -1,8 +1,7 @@
 package com.prasunmondal.mbros_manage.DatabaseCalls;
 
 import com.prasunmondal.mbros_manage.DatabaseUtils.FetchAllFromDB;
-import com.prasunmondal.mbros_manage.Models.Customer;
-import com.prasunmondal.mbros_manage.Models.Order;
+import com.prasunmondal.mbros_manage.models.Order;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
